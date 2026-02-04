@@ -1,0 +1,46 @@
+# Core dependencies
+gymnasium>=0.29.0
+numpy>=1.24.0
+pandas>=2.0.0
+torch>=2.0.0
+tqdm>=4.65.0
+pyyaml>=6.0
+omegaconf>=2.3.0
+matplotlib>=3.7.0
+tensorboard>=2.13.0
+plotly>=5.15.0
+
+# Algorithm libraries
+stable-baselines3>=2.0.0
+sb3-contrib>=2.0.0
+
+# Multi-agent support
+pettingzoo>=1.24.0
+supersuit>=3.8.0
+
+# Model-based RL
+mujoco>=2.3.0
+gymnasium-robotics>=1.2.0
+
+# Offline RL datasets
+d4rl>=1.1.0
+
+# Logging and tracking
+wandb>=0.15.0
+mlflow>=2.5.0
+
+# Web demo
+streamlit>=1.25.0
+gradio>=3.40.0
+
+# Development tools
+black>=23.0.0
+ruff>=0.0.280
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pre-commit>=3.3.0
+
+# Optional: JAX ecosystem
+# jax>=0.4.0
+# flax>=0.7.0
+# brax>=0.1.0

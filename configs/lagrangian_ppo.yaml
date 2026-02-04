@@ -1,0 +1,36 @@
+# Environment configuration
+env:
+  name: "CartPole-v1"
+  seed: 42
+
+# Training configuration
+training:
+  num_episodes: 2000
+  eval_episodes: 20
+  eval_freq: 100
+  log_freq: 20
+  save_freq: 200
+
+# Algorithm configuration
+algorithm:
+  name: "lagrangian_ppo"
+  learning_rate: 3e-4
+  discount_factor: 0.99
+  lagrangian_multiplier_lr: 1e-3
+  clip_ratio: 0.2
+  value_loss_coef: 0.5
+  entropy_coef: 0.01
+  max_grad_norm: 0.5
+
+# Constraint configuration
+constraints:
+  threshold: 0.3
+  type: "position"
+  penalty_weight: 5.0
+  use_constraint_wrapper: true
+  use_safety_wrapper: false
+
+# Output configuration
+output:
+  directory: "./outputs"
+  log_level: "INFO"
